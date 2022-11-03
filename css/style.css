@@ -345,6 +345,9 @@ summary {
   margin-left: 30px;
 }
 
+.get-started {
+  margin-bottom: 100px;
+}
 .get-started-wrapper {
   display: flex;
   justify-content: space-between;
@@ -369,32 +372,7 @@ summary {
   line-height: 30px;
 }
 .get-started__button {
-  position: relative;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
-  color: #fff;
-  border: none;
-  background-color: #f53838;
   padding: 17.5px 77.5px;
-  border-radius: 10px;
-  z-index: 99;
-  cursor: pointer;
-}
-.get-started__button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(245, 56, 56, 0.35);
-  width: 211px;
-  height: 25px;
-  filter: blur(27px);
-  border-radius: 10px;
-  margin-top: 60px;
-  z-index: 1;
 }
 .get-started__img {
   width: 611.24px;
@@ -404,6 +382,50 @@ summary {
 }
 .get-started__text {
   margin-bottom: 50px;
+}
+
+.description {
+  background-color: #fff;
+}
+.description-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 1140px;
+  height: 200px;
+  align-items: center;
+  z-index: 99;
+}
+.description-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d1025;
+  opacity: 0.06;
+  filter: blur(57px);
+  width: 1068.84px;
+  height: 43px;
+  margin-top: 250px;
+  z-index: 1;
+}
+.description__item {
+  display: flex;
+  align-items: center;
+}
+.description__separation {
+  height: 125px;
+  width: 2px;
+  background-color: #eeeff2;
+  border-radius: 10px;
+}
+.description__text {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 36.5px;
 }
 
 * {
@@ -423,4 +445,34 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.main-button {
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fff;
+  border: none;
+  background-color: #f53838;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 99;
+}
+.main-button::after {
+  content: "";
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(245, 56, 56, 0.35);
+  width: 211px;
+  height: 25px;
+  filter: blur(27px);
+  border-radius: 10px;
+  margin-top: 60px;
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */
