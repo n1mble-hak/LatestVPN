@@ -1,5 +1,4 @@
 .advantages {
-  margin-bottom: 126px;
   &__img {
     width: 508.12px;
     height: 414.71px;
@@ -8,6 +7,7 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 207px;
   }
   &-text {
     align-self: flex-end;

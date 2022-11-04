@@ -1,0 +1,128 @@
+.plan {
+  margin-bottom: 147px;
+  &__up {
+    max-width: 555px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  &__title,
+  &__text {
+    text-align: center;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray-color;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+    padding-top: 80px;
+    width: 330px;
+    height: 760px;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &__img {
+      width: 144.9px;
+      height: 165.37px;
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+    }
+    &__li {
+      list-style: none;
+      position: relative;
+      padding-left: 38px;
+      margin-bottom: 15px;
+
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: $gray-color;
+      &::before {
+        position: absolute;
+        margin-bottom: 7px;
+        content: "";
+        bottom: 3px;
+        left: 0;
+        background-position: center;
+        background-image: url("../../img/plan-true.svg");
+        width: 13px;
+        height: 9px;
+        background-repeat: no-repeat;
+      }
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &__text {
+      font-weight: 500;
+      font-size: 25px;
+      line-height: 30px;
+    }
+    &__bottom {
+      position: absolute;
+      bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__button {
+      margin-top: 20px;
+      padding: 13px 63px;
+      border: 2px solid $main-color;
+      background: none;
+      border-radius: 50px;
+      color: $main-color;
+      cursor: pointer;
+    }
+    &:hover {
+      border: 2px solid $main-color;
+      .plan-item__button {
+        background-color: $main-color;
+        color: #fff;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          margin-right: auto;
+          margin-left: auto;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(245, 56, 56, 0.35);
+          width: 127px;
+          height: 17px;
+          filter: blur(27px);
+          border-radius: 10px;
+          margin-top: 60px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

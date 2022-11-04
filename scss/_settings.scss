@@ -14,32 +14,3 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-.main-button {
-  position: relative;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 25px;
-  color: $white-color;
-  border: none;
-  background-color: $button-color;
-  border-radius: 10px;
-  cursor: pointer;
-  z-index: 99;
-  &::after {
-    content: "";
-    position: absolute;
-    margin-right: auto;
-    margin-left: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(245, 56, 56, 0.35);
-    width: 211px;
-    height: 25px;
-    filter: blur(27px);
-    border-radius: 10px;
-    margin-top: 60px;
-    z-index: 1;
-  }
-}

@@ -1,14 +1,14 @@
 .description {
   background-color: #fff;
+
   &-wrapper {
-    display: flex;
     position: relative;
-    justify-content: space-between;
     width: 1140px;
     height: 200px;
+    margin: auto;
     align-items: center;
     z-index: 99;
-
+    margin-bottom: 100px;
     &::before {
       position: absolute;
       content: "";
@@ -24,6 +24,12 @@
       margin-top: 250px;
       z-index: 1;
     }
+  }
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 958px;
+    margin: auto;
   }
   &__item {
     display: flex;
