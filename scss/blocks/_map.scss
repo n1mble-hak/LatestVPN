@@ -1,0 +1,29 @@
+.map {
+  margin-bottom: 94px;
+  &__title {
+    text-align: center;
+    width: 383px;
+    margin: auto;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    text-align: center;
+    width: 555px;
+    margin: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $gray-color;
+    margin-bottom: 156px;
+    b {
+      font-weight: 500;
+    }
+  }
+  &__img {
+    display: block;
+    margin: auto;
+  }
+}
